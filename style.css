@@ -1,0 +1,17 @@
+* {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #c8d296;
+  }
+
+body {
+background-color: #132522;
+text-align: center;
+font-size: 40px;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+}
