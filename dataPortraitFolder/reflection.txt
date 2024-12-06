@@ -1,0 +1,10 @@
+My data portrait displays the amount of music I've listened to for the past 20 weeks in minutes. The data was sourced from Airbuds, which is a mobile app that records listening history and tracks listening activity. Music has played a very important role in my life; it's always been there for me, not to be corny. Given that, I thought represented my listening habits would be most appropriate. 
+
+The displaying of information relies on the logic of the unit circle with the first data point— week 1— at 0, and the last data point— week 20— located right before 2pi. The data is represented using circles, with the circle sizes corresponding to the number of minutes I listened to music; more minutes means larger circle. Upon hovering over each circle, the week and number of minutes is presented in the top left corner of the canvas, functioning as an information key. 
+
+Data: Week and Minutes
+Week 1 984, Week 2 968, Week 3 803, Week 4 1442, Week 5 2021, Week 6 951, Week 7 417, Week 8 777, Week 9 1052, Week 10 334, Week 11 572, Week 12 1018, Week 13 560, Week 14 594, Week 15 588, Week 16 1033, Week 17 425, Week 18 675, Week 19 673, Week 20 948
+
+Initially, I wanted the circles to move continuosly in a sin wave; however, I settled on circles drawn in a circular orientation with their sizes continuously oscillating between small and large. This was inspired by those YouTube videos that have those weird music pulsating animations. My project utilizes the map function quite a lot in order to achieve proper scaling. 
+
+After gathering the data, I realized I listened to a lot less music than I thought I did. I also realized that my listening activity doesn't drastically vary each week, with a few weekly exceptions. Visualizing data in a creative way is undeniably difficult— conjuring an idea was harder than executing it, at least for me. I think the fact that the data represents listening activity gets lost in translation because I don't have any text that indicates it.
