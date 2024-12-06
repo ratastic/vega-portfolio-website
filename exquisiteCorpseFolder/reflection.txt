@@ -1,0 +1,7 @@
+Partners: Xinyu Ji (head), Russel Ge (torso)
+
+Our goal was to create the strangest exquisite corpse we possible could, which is why each of our drawn sections are so drastically different. Now, when I see the three sections strung together to form the character, each section seems to compliment one another, which is not what I had expected. He reminds me of a Minecraft desert villager, especially because of the color palette, facial features, and attire.
+
+As for my process, I began with the user-defined functions. I applied this concept towards the shoulder piece that is constructed by golden rectangles, the purple head and neck pieces, and the two legs. After this, I formed the facial features using circles for the eyes and a thick line for th nose. Finally, I added the waist piece and arms on each side. Once I had these shapes laid out on the canvas, I tweaked the colors to give the exquisite corpse a more unifying look. I didn't want to assign a Minecraft villager color palette to the character since the nose is already reminiscent of a minecraft villager; however, after filling in the colors, it ended up looking like one anyways.
+
+I really enjoy working with user-defined functions; it gives my clothes a cleaner and more organized look.
