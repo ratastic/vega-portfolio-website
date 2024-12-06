@@ -1,0 +1,7 @@
+My project— the aesthetic and the animated movement— was inspired by illusory motion images, static images that appear to be moving because of how the colors and shapes interact with each other. 
+
+I began by creating the neon green square grid using a for loop and nested for loop. The information of each light blue square and hot pink circle is plastered over the grid. Upon moving your mouse over the canvas, the squares and circles move along with it in a wave pattern. The pattern is defined by a distance function and a sin wave, with the formation of the squares and circles on the grid determined by the wave pattern through an if statement and else if statement. The last step was adding a different blend mode for each quadrant. Scrubbing quickly between quadrants creates cool color effects.
+
+I think the vibrant and quick flashing colors remind me a lot of rave visuals. If the colors were less harsh and if I tweak the pattern to be wider, I think this could be suitable for a browser fidget toy. I can also see this being used as a motion tracker screen, where the squares and circles are drawn based on your movement. I've seen videos on Instagram of people dressed in wearable screens, and I think this could be a cool graphic to have loop over it.
+
+I also executed my second sketch idea of the interactive cafe wall if you are interested in seeing!
