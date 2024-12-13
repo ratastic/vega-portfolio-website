@@ -1,35 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/png" href="favicon/flyImage.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEGAAAAA</title>
+  <link rel="icon" type="image/png" href="favicon/flyImage.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEGAAAAA</title>
 </head>
-    <link rel = "stylesheet" href = "style.css">
+<link rel="stylesheet" href="style.css">
 <body>
-    <h1>/((・ｪ・))\ hear-no-evil monkey ⊂((・x・))⊃ speak-no-evil monkey ⊂((ᵕｪᵕ))⊃ see-no-evil monkey</h1>
+   <div class="column left">
+    <img src="appleIcons/Apples_01.png" alt="Description of image" class="header-image">
+       <p class="nav-link" onclick="showContent('about')">ABOUT</p>
+       <p class="nav-link" onclick="showContent('p5js')">P5.JS</p>
+       <p class="nav-link" onclick="showContent('doodles')">DOODLES</p>
+   </div>
+   <div class="column right" id="content-area">
+       <p>Hello!</p>
+   </div>
 
-    <a href = "nikkiAlbumFolder/nikkiAlbum.html" >nikkiAlbumFolder</a>
-    <br> 
-    <a href = "inannaLostItemFolder/inannaLostItem.html" >inannaLostItemFolder</a>
-    <br>
-    <a href = "flowerGeneratorFolder/flowerGenerator.html" >flowerGeneratorFolder</a>
-    <br>
-    <a href = "experimentalClockFolder/experimentalClock.html" >experimentalClockFolder</a>
-    <br>
-    <a href = "exquisiteCorpseFolder/exquisiteCorpse.html" >exquisiteCorpseFolder</a>
-    <br>
-    <a href = "opticalIllusionFolder/opitcalIllusion.html" >opticalIllusionFolder</a>
-    <br>
-    <a href = "dataPortraitFolder/dataPortrait.html" >dataPortraitFolder</a>
-    <br>
-    <a href = "gameAssignmentFolder/gameAssignment.html" >gameAssignmentFolder</a>
+   <script>
+    const content = {
+        about: 
+        `<div class="sketch">
+            <h1>ABOUT</h1>
+            <h2> Vega Jafri is an artist born in Manhattan, raised in Queens and Hong Kong, and living on Long Island. 
+                His practice is primarly illustrative— both analog and digital— focusing on transgenderism, odd organic shapes, insects, and apple motifs. </h2>
+                <br>
+            <h2> As an aspiring game designer and developer, he is currently studying at Parsons School of Design under the game design curriculum offered by the Design and Technology program. </h2>
+                <br>
+            <h2> Other than creating art, Vega enjoyes listening to music, playing with his two cats, pinning insects, animal preservation, and collecting strickers and keychains. </h2>
+                <br>
+            <h2> At the moment, he is working on illustration projects in order to expand his portfolio and a long-term, collaborative narrative video game project. Stay tuned!
+                <br>
+            <h3> CONTACT: </h3>
+            <h4> giantwhitedeer@gmail(dot)com </h4>
+                </div>`
+        ,
+        p5js: ` 
+        <div class="sketch">
+            <h5>P5.JS WORK</h5>
+        </div>
 
+        <div class="sketch">
+        <h2> Nikki's Favorite Album </h2>
+        <iframe src=\"https://editor.p5js.org/vegaa/full/SwpLVQNop\" 
+                style=\"width:400px; height:400px;\"></iframe>    
+        <div/>
+
+        <br>
+
+        <div class="sketch">
+        <h2> Inanna's Lost Item </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/lIMJf7bD-"
+                style=\"width:600px; height:600px;\"></iframe>
+        </div>
+
+        <br>
+
+        <div class="sketch">
+        <h2> Random Flower Generator </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/hDLrzoXEz"
+                style=\"width:500px; height:590px;\"></iframe>
+        </div>
+        
+        <br>
+
+        <div class="sketch">
+        <h2> Experimental Clock </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/lbOtkd8t0"
+                style=\"width:600px; height:600px;\"></iframe>
+        </div>
+
+        <br>
+
+        <div class="sketch">
+        <h2> Exquisite Corpse </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/Nca0zN1C0"
+                style=\"width:400px; height:600px;\"></iframe>
+        </div>
+        
+        <br>
+
+        <div class="sketch">
+        <h2> Interactive Optical Illusion <h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/OB5x8lvsK"
+                style=\"width:600px; height:600px;\"></iframe>
+        </div>
+
+        <br>
+
+        <div class="sketch">
+        <h2> Music Data Portrait </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/xmwcYzSsM"
+                style=\"width:600px; height:600px;\"></iframe>
+        </div>
+
+        <br>
+
+        <div class="sketch">
+        <h2> Autobiographical Game </h2>
+        <iframe src="https://editor.p5js.org/vegaa/full/taZx8yKaU"
+                style=\"width:620px; height:435px;\"></iframe>
+        </div>
+        
+        `
+        ,
+        doodles: 
+        `<div class="sketch">
+        <h1> DOODLES </h1>
+        <div class="p5js-container">
+            <img src="appleIcons/IMG_8346.png" alt="Doodle 1">
+            <img src="appleIcons/IMG_8349.png" alt="Doodle 2">
+            <img src="appleIcons/IMG_8352.png" alt="Doodle 3">
+            <img src="appleIcons/IMG_8384.jpg" alt="Doodle 4">
+        </div>
+        </div>
+        `
+    };
+    function showContent(key) {
+        const contentArea = document.getElementById('content-area');
+        contentArea.innerHTML = `<p>${content[key]}</p>`;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showContent('about');
+    });
+</script>
 </body>
 </html>
