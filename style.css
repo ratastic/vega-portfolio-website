@@ -1,5 +1,5 @@
 * {
-  font-family: Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #ff007f;
@@ -7,45 +7,52 @@
 
 body {
   display: flex;
-  margin: 90px;
-  height: 100vh;
+  margin: 10px;
   background-color: white;
-  background-image: url("appleIcons/Wormies_02.png");
+  /* background-image: url("appleIcons/Wormies_02.png"); */
   background-position-x: center;
   background-position-y: center;
   background-size: 2000px;
-
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+  height: 100vh; 
 }
 
 .column {
-  padding: 50px;
-  overflow-y: auto;
+  padding: 30px;
+  height: 100vh; 
 }
 
 .left {
-  flex: 0.2;
+  flex: 0.1;
   background-color: white;
-  /*border-right: 2px solid #ff007f;*/
+  position: sticky; 
+  top: 0; 
+  height: 100vh; 
+  overflow-y: auto; 
 }
 
 .right {
-  flex: 0.8;
+  flex: 0.9;
   background-color: white;
+  height: 100vh; 
+  overflow-y: auto; 
+  padding-right: 30px; 
+  letter-spacing: 10px;
 }
 
 .header-image {
-  width: 100%; 
+  width: 130%; 
   height: auto; 
   margin-top: 80px;
 }
 
 .nav-link {
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
   transition: color 0.3s;
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+  letter-spacing: 10px;
 }
 
 .nav-link:hover {
@@ -59,57 +66,51 @@ h1 {
 }
 
 h2 {
-font-size: 16px;
+  font-size: 16px;
 }
 
 h3 {
-padding-top: 80px;
-font-size: 16px;
-text-align: center;
+  padding-top: 80px;
+  font-size: 16px;
+  text-align: center;
 }
 
-h4{
-font-size: 16px;
-text-align: center;
+h4 {
+  font-size: 16px;
+  text-align: center;
 }
 
-h5{
+h5 {
   font-size: 22px;
   text-align: center;
 }
 
 .p5js-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-items: center; 
+  padding: 10px; 
+}
+
+.p5js-container > div {
+  width: 100%; 
+  height: 300px; 
+  overflow: hidden; 
   display: flex;
-  flex-wrap: wrap;     
-  justify-content: center; 
-  gap: 20px;           
+  justify-content: center;
+  align-items: center;
+  background-color: white; 
 }
 
-/* First image (IMG_8346.png) */
-.p5js-container img:nth-child(1) {
-  width: 300px;          
-  height: 400px;        
-  object-fit: cover;     
+.p5js-container img {
+  width: 100%;          
+  height: 100%;       
+  object-fit: cover;   
+  object-position: center;
 }
 
-/* Second image (IMG_8349.png) */
-.p5js-container img:nth-child(2) {
-  width: 300px;          
-  height: 400px;         
-  object-fit: cover;     
-}
-
-
-.p5js-container img:nth-child(3) {
-  width: 400px;         
-  height: 200px;   
-  object-fit: contain; 
-  object-position: right;  
-}
-
-.p5js-container img:nth-child(4) {
-  width: 400px;         
-  height: 200px;         
-  object-fit: contain; 
-  object-position: left;
+.p5js-container img:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
 }
