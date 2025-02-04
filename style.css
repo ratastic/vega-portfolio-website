@@ -5,6 +5,7 @@
 
 .nav-link a:hover {
   color: #9bdd4a;
+  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
 }
 
 * {
@@ -25,8 +26,9 @@
 
 body {
   display: flex;
-  margin: 0;
-  background-color: white;
+  /* margin: 25px;
+  background-image: url("appleIcons/Wormies_02.png"); */
+  background-color: white; 
   background-position-x: center;
   background-position-y: center;
   background-size: 2000px;
@@ -122,6 +124,8 @@ h4 {
 
 .analog-container img:hover {
   transform: scale(1.05);
+  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+  mix-blend-mode: difference;
 }
 
 .column-image {
