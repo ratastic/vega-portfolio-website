@@ -198,7 +198,7 @@ h4 {
   }
 
   .analog-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
