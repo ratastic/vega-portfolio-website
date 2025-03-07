@@ -26,9 +26,7 @@
 
 body {
   display: flex;
-  /* margin: 25px;
-  background-image: url("appleIcons/Wormies_02.png"); */
-  background-color: white; 
+  background-color: white;
   background-position-x: center;
   background-position-y: center;
   background-size: 2000px;
@@ -167,4 +165,134 @@ h4 {
   align-items: center;
   padding-bottom: 30px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .left {
+    flex: 0.25;
+  }
+
+  .right {
+    flex: 0.75;
+    padding-right: 15px;
+  }
+
+  .header-image {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    letter-spacing: 8px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2, h3, h4 {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .analog-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+
+  .column-image img {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .left {
+    flex: 0;
+    position: relative;
+    height: auto;
+  }
+
+  .right {
+    flex: 1;
+    padding-right: 15px;
+  }
+
+  .header-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    letter-spacing: 6px;
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2, h3, h4 {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .analog-container {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  .column-image img {
+    padding-left: 10px;
+  }
+
+  .single-image img {
+    max-width: 100%;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2, h3, h4 {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .analog-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .column-image img {
+    padding-left: 5px;
+  }
+
+  .single-image img {
+    max-width: 100%;
+    padding-left: 5px;
+  }
 }
