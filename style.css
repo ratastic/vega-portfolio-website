@@ -202,9 +202,9 @@ h4 {
     gap: 15px;
   }
 
-  .column-image img {
+  /* .column-image img {
     padding-left: 15px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
