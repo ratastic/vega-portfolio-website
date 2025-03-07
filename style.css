@@ -51,7 +51,7 @@ body {
 .right {
   flex: 0.9;
   background-color: white;
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
   padding-right: 30px;
 }
@@ -59,7 +59,7 @@ body {
 .header-image {
   width: 130%;
   height: auto;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .nav-link {
@@ -202,9 +202,9 @@ h4 {
     gap: 15px;
   }
 
-  .column-image img {
+  /* .column-image img {
     padding-left: 15px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
