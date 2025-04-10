@@ -167,6 +167,31 @@ h4 {
   margin-bottom: 30px;
 }
 
+#takeQuizButton {
+  border: none;
+  background: #ff007f;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 45%;
+}
+
+#takeQuizButton:hover {
+  background: #9bdd4a;
+  color: white;
+}
+
+h6 {
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 10px;
+}
+
+h7 {
+  font-size: 16px;
+  text-align: left;
+}
+
 @media (max-width: 1024px) {
   .left {
     flex: 0.25;
