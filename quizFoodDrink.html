@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon/flyImage.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>foodDrink - Vega Jafri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="column left">
+    <img src="appleIcons/Apples_01.png" alt="Description of image" class="header-image">
+    <h1 class="name"> Vega Spring Jafri</h1>
+    <p class="nav-link"><a href="index.html">about me</a></p>
+    <p class="nav-link"><a href="visualArt.html">visual art</a></p>
+    <p class="nav-link"><a href="interactiveArt.html">interactive art</a></p>
+    <!-- <p class="nav-link"><a href="p5js.html">p5.js</a></p> -->
+    <p class="nav-link"><a href="advCC.html">adv cc</a></p>
+  </div>
+
+  <div class="column right">
+    <h1>what is your taste?</h1>
+    <div>
+        <h4>answer these 4 questions about food</h4>
+        <br>
+        <h4>1) would you prefer sweet or savory/salty foods?</h4>
+        <div class="button-row">
+            <button onClick = "sweetAnswer()" id = "sweetButton"> sweet </button>
+            <button onClick = "savoryAnswer()" id = "savoryButton"> savory/salty </button>
+        </div>
+        <br>
+        <h4>2) are you interested in bread or rice/noodles?</h4>
+        <div class="button-row">
+            <button onClick = "breadAnswer()" id = "breadButton"> bread </button>
+            <button onClick = "riceAnswer()" id = "riceButton"> rice/noodles </button>
+        </div>
+        <br>
+        <h4>3) would you prefer a meal-like dish or a snack-like dish?</h4>
+        <div class="button-row">
+            <button onClick = "mealAnswer()" id = "mealButton"> meal-like </button>
+            <button onClick = "snackAnswer()" id = "snackButton"> snack-like </button>
+        </div>
+        <br>
+        <h4>4) are you looking for a light or filling dish?</h4>
+        <div class="button-row">
+            <button onClick = "lightAnswer()" id = "lightButton"> light </button>
+            <button onClick = "fillingAnswer()" id = "fillingButton"> filling </button>
+        </div>
+        <br>
+        <h4>answer these 2 questions about beverages</h4>
+        <br>
+        <h4>5) would you prefer an iced drink or a hot drink?</h4>
+        <div class="button-row">
+            <button onClick = "icedAnswer()" id = "hotButton"> iced </button>
+            <button onClick = "icedAnswer()" id = "hotButton"> hot </button>
+        </div>
+        <br>
+        <h4>6) do you want a milk based beverage?</h4>
+        <div class="button-row">
+            <button onClick = "milkAnswer()" id = "milkButton"> iced </button>
+            <button onClick = "noMilkAnswer()" id = "noMilkButton"> hot </button>
+        </div>
+        <br>
+        <div class="button-row">
+            <button onClick = "submitAnswers()" id = "submitButton"> submit </button>
+            <button onClick = "stylePageButton()" id = "styleButton"> continue </button>
+        </div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

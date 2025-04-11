@@ -4,11 +4,9 @@
   <link rel="icon" type="image/png" href="favicon/flyImage.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>communityQuiz - Vega Jafri</title>
+  <title>lasrtQuestions - Vega Jafri</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,10 +21,26 @@
   </div>
 
   <div class="column right">
-    <h1>welcome!</h1>
-    <div>
-        <h4> answer a few questions to find out which classic hong kong breakfast dish and paired beverage i'd reccommend to you!</h4>
-        <button onClick = "continueToQuiz()" id = "continueToQuiz"> continue </button>
+    <h1>last two remaining questions</h1>
+    <br>
+    <h4>what is your name?</h4>
+    <div class="input-container">
+        <input id="name" type="text"/> 
+    </div>
+    <br>
+    <h4>please choose a typeface.</h4>
+    <div class="input-container">
+    <select id="typefaceOption">
+        <option disabled selected value> -- select an option -- </option>
+        <option class="selection-option" value="Press Start 2P">prest start 2p</option>
+        <option class="selection-option" value="Quicksand">quicksand</option>
+        <option class="selection-option" value="Helvetica">helvetica</option>
+    </select>
+    </div>
+    <div class="button-row">
+        <button onClick = "submitStyle()" id = "submitStyleButton"> submit </button>
+        <button onClick = "outcomeButton()" id = "outcomeButton"> continue </button>
+    </div>
     </div>
 
   <script src="script.js"></script>
