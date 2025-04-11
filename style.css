@@ -181,6 +181,20 @@ h4 {
   color: white;
 }
 
+#continueToQuiz {
+  border: none;
+  background: #ff007f;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+#continueToQuiz:hover {
+  background: #9bdd4a;
+  color: white;
+}
+
 h6 {
   text-align: left;
   font-size: 22px;
