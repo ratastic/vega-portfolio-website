@@ -198,6 +198,21 @@ h4 {
   background: #9bdd4a;
 }
 
+hr {
+  border: none;
+  border-top: 2px dotted #ff007f;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.solid-line {
+  border: none;
+  height: 2px;
+  background-color: #ff007f;
+  width: 60%;
+  margin: 20px auto;
+}
+
 input[type="text"],
 select {
   font-family: Helvetica;
