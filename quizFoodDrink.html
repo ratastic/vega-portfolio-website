@@ -18,60 +18,80 @@
     <p class="nav-link"><a href="index.html">about me</a></p>
     <p class="nav-link"><a href="visualArt.html">visual art</a></p>
     <p class="nav-link"><a href="interactiveArt.html">interactive art</a></p>
-    <!-- <p class="nav-link"><a href="p5js.html">p5.js</a></p> -->
     <p class="nav-link"><a href="advCC.html">adv cc</a></p>
   </div>
 
   <div class="column right">
     <h1>what is your taste?</h1>
     <div>
-        <h4 style="font-weight:bold;">answer these 4 questions about food</h4>
-        <hr class="solid-line">
-        <h4 style="font-weight:bold;">1) would you prefer sweet or savory/salty foods?</h4>
-        <div class="button-row">
-            <button onClick = "sweetAnswer()" id = "sweetButton"> sweet </button>
-            <button onClick = "savoryAnswer()" id = "savoryButton"> savory/salty </button>
-        </div>
-        <hr>
-        <h4 style="font-weight:bold;">2) are you interested in bread or rice/noodles?</h4>
-        <div class="button-row">
-            <button onClick = "breadAnswer()" id = "breadButton"> bread </button>
-            <button onClick = "riceAnswer()" id = "riceButton"> rice/noodles </button>
-        </div>
-        <hr>
-        <h4 style="font-weight:bold;">3) would you prefer a meal-like dish or a snack-like dish?</h4>
-        <div class="button-row">
-            <button onClick = "mealAnswer()" id = "mealButton"> meal-like </button>
-            <button onClick = "snackAnswer()" id = "snackButton"> snack-like </button>
-        </div>
-        <hr>
-        <h4 style="font-weight:bold;">4) are you looking for a light or filling dish?</h4>
-        <div class="button-row">
-            <button onClick = "lightAnswer()" id = "lightButton"> light </button>
-            <button onClick = "fillingAnswer()" id = "fillingButton"> filling </button>
-        </div>
-        <hr>
-        <h4 style="font-weight:bold;">answer these 2 questions about beverages</h4>
-        <hr class="solid-line">
-        <h4 style="font-weight:bold;">5) would you prefer an iced drink or a hot drink?</h4>
-        <div class="button-row">
-            <button onClick = "icedAnswer()" id = "hotButton"> iced </button>
-            <button onClick = "icedAnswer()" id = "hotButton"> hot </button>
-        </div>
-        <hr>
-        <h4 style="font-weight:bold;">6) do you want a milk based beverage?</h4>
-        <div class="button-row">
-            <button onClick = "milkAnswer()" id = "milkButton"> milk </button>
-            <button onClick = "noMilkAnswer()" id = "noMilkButton"> no milk </button>
-        </div>
-        <hr>
-        <div class="button-row">
-            <button onClick = "stylePageButton()" id = "styleButton"> continue </button>
-        </div>
+      <h4 style="font-weight:bold;">answer these 6 questions about food</h4>
+      <hr class="solid-line">
+
+      <h4 style="font-weight:bold;">1) would you prefer sweet or savory/salty foods?</h4>
+      <div class="button-row">
+        <button onClick="sweetAnswer()" id="sweetButton" data-group="flavor" class="bg-pink-400"> sweet </button>
+        <button onClick="savoryAnswer()" id="savoryButton" data-group="flavor" class="bg-pink-400"> savory/salty </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">2) are you interested in bread or rice/noodles?</h4>
+      <div class="button-row">
+        <button onClick="breadAnswer()" id="breadButton" data-group="carb" class="bg-pink-400"> bread </button>
+        <button onClick="riceAnswer()" id="riceButton" data-group="carb" class="bg-pink-400"> rice/noodles </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">3) do you want soup?</h4>
+      <div class="button-row">
+        <button onClick="soupAnswer()" id="soupButton" data-group="soup" class="bg-pink-400"> yes, soup </button>
+        <button onClick="noSoupAnswer()" id="noSoupButton" data-group="soup" class="bg-pink-400"> no soup </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">4) do you want a dish with meat?</h4>
+      <div class="button-row">
+        <button onClick="meatAnswer()" id="meatButton" data-group="meat" class="bg-pink-400"> meat </button>
+        <button onClick="noMeatAnswer()" id="noMeatButton" data-group="meat" class="bg-pink-400"> no meat </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">5) would you prefer a meal-like dish or a snack-like dish?</h4>
+      <div class="button-row">
+        <button onClick="mealAnswer()" id="mealButton" data-group="meal" class="bg-pink-400"> meal-like </button>
+        <button onClick="snackAnswer()" id="snackButton" data-group="meal" class="bg-pink-400"> snack-like </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">6) are you looking for a light or filling dish?</h4>
+      <div class="button-row">
+        <button onClick="lightAnswer()" id="lightButton" data-group="density" class="bg-pink-400"> light </button>
+        <button onClick="fillingAnswer()" id="fillingButton" data-group="density" class="bg-pink-400"> filling </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">answer these 2 questions about beverages</h4>
+      <hr class="solid-line">
+
+      <h4 style="font-weight:bold;">7) would you prefer an iced drink or a hot drink?</h4>
+      <div class="button-row">
+        <button onClick="icedAnswer()" id="icedButton" data-group="temp" class="bg-pink-400"> iced </button>
+        <button onClick="hotAnswer()" id="hotButton" data-group="temp" class="bg-pink-400"> hot </button>
+      </div>
+      <hr>
+
+      <h4 style="font-weight:bold;">8) do you want a milk based beverage?</h4>
+      <div class="button-row">
+        <button onClick="milkAnswer()" id="milkButton" data-group="milk" class="bg-pink-400"> milk </button>
+        <button onClick="noMilkAnswer()" id="noMilkButton" data-group="milk" class="bg-pink-400"> no milk </button>
+      </div>
+      <hr>
+
+      <div class="button-row">
+        <button onClick="outcomeButton()" id="outcomeButton"> continue </button>
+      </div>
     </div>
-</div>
+  </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
