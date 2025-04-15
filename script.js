@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.meat &&
       answers.snack
     ) {
-      foodRec = "cha siu cheung fun";
+      foodRec = "shrimp cheung fun";
     } else if (
       answers?.filling &&
       answers.soup &&
