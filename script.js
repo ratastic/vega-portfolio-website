@@ -28,6 +28,7 @@ function toggleButtonStyles(selectedId, otherId) {
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("takeQuizButton");
   const button1 = document.getElementById("continueToQuiz");
+  const button2 = document.getElementById("retakeQuiz");
   const button3 = document.getElementById("outcomeButton");
 
   if (button) {
@@ -42,6 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("userName", name);
       window.location.href = "quizFoodDrink.html";
     });
+  }
+
+  if (button2){
+    button2.addEventListener("click", function (){
+    window.location.href = "quizFoodDrink.html";
+    });
+
   }
 
   if (button3) {
