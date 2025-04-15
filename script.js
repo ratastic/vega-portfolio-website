@@ -141,9 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.sweet &&
       !answers.meat &&
       !answers.snack
-    ) {
+    ) 
       foodRec = "pineapple bun with a slice of butter";
-    }
     } else {
       foodRec = "dim sum";
     }
@@ -170,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-});
+);
 
 let answers = {
   sweet: false,
