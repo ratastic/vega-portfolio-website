@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.meat &&
       answers.meal
     ) {
-      foodRec = "beef cart noodles";
+      foodRec = "beef cart noodles"; // works
     } else if (
       answers?.light &&
       answers.soup &&
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       !answers.meat &&
       answers.meal
     ) {
-      foodRec = "plain congee with you tiao";
+      foodRec = "plain congee with you tiao"; // works
     } else if (
       answers?.filling &&
       !answers.soup &&
@@ -91,88 +91,88 @@ document.addEventListener("DOMContentLoaded", function () {
       !answers.meat &&
       answers.meal
     ) {
-      foodRec = "hong kong-styled french toast";
+      foodRec = "hong kong-styled french toast"; // works
     } else if (
-      answers?.filling &&
+      answers?.light &&
       answers.soup &&
       !answers.bread &&
       !answers.sweet &&
-      answers.meat &&
+      !answers.meat &&
       answers.meal
     ) {
-      foodRec = "congee with century egg";
+      foodRec = "congee with century egg"; // works
     } else if (
-      answers?.filling &&
+      answers?.light &&
       answers.soup &&
       answers.noodles &&
       answers.sweet &&
       !answers.meat &&
       answers.snack
     ) {
-      foodRec = "mango pomelo sago";
+      foodRec = "mango pomelo sago"; // works
     } else if (
       answers?.filling &&
       !answers.soup &&
-      answers.bread &&
-      answers.savory &&
-      answers.meat &&
-      answers.meal
-    ) {
-      foodRec = "cha siu fan";
-    } else if (
-      answers?.filling &&
-      !answers.soup &&
-      answers.noodles &&
-      answers.sweet &&
-      answers.meat &&
-      answers.snack
-    ) {
-      foodRec = "shrimp cheung fun";
-    } else if (
-      answers?.light &&
-      !answers.soup &&
-      answers.noodles &&
-      answers.sweet &&
-      !answers.meat &&
-      answers.snack
-    ) {
-      foodRec = "cheung fun";
-    } else if (
-      answers?.filling &&
-      answers.soup &&
-      answers.bread &&
-      answers.sweet &&
-      !answers.meat &&
-      answers.meal
-    ) {
-      foodRec = "mango pancake";
-    } else if (
-      answers?.light &&
-      !answers.soup &&
-      answers.bread &&
-      answers.sweet &&
-      !answers.meat &&
-      answers.snack
-    ) {
-      foodRec = "dan tat";
-    } else if (
-      answers?.light &&
-      !answers.soup &&
-      answers.bread &&
-      answers.savory &&
-      answers.meat &&
-      answers.snack
-    ) {
-      foodRec = "cha siu bao";
-    } else if (
-      answers?.light &&
-      answers.soup &&
       answers.noodles &&
       answers.savory &&
       answers.meat &&
       answers.meal
     ) {
-      foodRec = "macaroni soup with spam";
+      foodRec = "cha siu fan"; // works
+    } else if (
+      answers?.filling &&
+      !answers.soup &&
+      answers.noodles &&
+      !answers.sweet &&
+      answers.meat &&
+      answers.snack
+    ) {
+      foodRec = "shrimp cheung fun"; // works
+    } else if (
+      answers?.light &&
+      !answers.soup &&
+      answers.noodles &&
+      answers.sweet &&
+      !answers.meat &&
+      answers.snack
+    ) {
+      foodRec = "cheung fun"; // works
+    } else if (
+      answers?.filling &&
+      answers.soup &&
+      answers.bread &&
+      answers.sweet &&
+      !answers.meat &&
+      answers.meal
+    ) {
+      foodRec = "mango pancake"; //works
+    } else if (
+      answers?.light &&
+      !answers.soup &&
+      answers.bread &&
+      answers.sweet &&
+      !answers.meat &&
+      answers.snack
+    ) {
+      foodRec = "dan tat"; // works
+    } else if (
+      answers?.light &&
+      !answers.soup &&
+      answers.bread &&
+      !answers.savory &&
+      answers.meat &&
+      answers.snack
+    ) {
+      foodRec = "cha siu bao"; //works
+    } else if (
+      answers?.light &&
+      answers.soup &&
+      answers.noodles &&
+      answers.savory &&
+      answers.meat &&
+      answers.meal
+    ) {
+      foodRec = "macaroni soup with spam"; // works
     } else if (
       answers?.filling &&
       !answers.soup &&
@@ -181,16 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
       !answers.meat &&
       answers.snack
     ) {
-      foodRec = "coconut cream bread";
-    } else if (
-      answers?.filling &&
-      !answers.soup &&
-      answers.bread &&
-      answers.sweet &&
-      !answers.meat &&
-      !answers.snack
-    ) {
-      foodRec = "pineapple bun with a slice of butter";
+      foodRec = "pineapple bun with a slice of butter"; // works
     } else {
       foodRec = "dim sum";
     }
