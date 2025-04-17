@@ -97,10 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.soup &&
       !answers.bread &&
       !answers.sweet &&
-      !answers.meat &&
+      answers.meat &&
       answers.meal
     ) {
-      foodRec = "congee with century egg"; // works
+      foodRec = "pork congee with century egg"; // works
     } else if (
       answers?.light &&
       answers.soup &&
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.meat &&
       answers.snack
     ) {
-      foodRec = "shrimp cheung fun"; // works
+      foodRec = "cheung fun with fishballs and siu mai"; // works
     } else if (
       answers?.light &&
       !answers.soup &&
@@ -164,6 +164,15 @@ document.addEventListener("DOMContentLoaded", function () {
       answers.snack
     ) {
       foodRec = "cha siu bao"; //works
+    } else if (
+      answers?.light &&
+      !answers.soup &&
+      answers.bread &&
+      answers.savory &&
+      answers.meat &&
+      answers.snack
+    ) {
+      foodRec = "cheung zai bao"; 
     } else if (
       answers?.light &&
       answers.soup &&
