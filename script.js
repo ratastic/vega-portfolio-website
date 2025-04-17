@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "red bean ice": "foodQuizImages/redBeanIce.png",
         //"hot lemon tea": foodQuizImages
         "ice lemon tea": "foodQuizImages/honeyLemon.png"
-        //"hot lemon tea": "foodQuizImages/",
+        //"hong kong milk tea": "foodQuizImages/",
         //"ovaltine": "foodQuizImages"
       }
     
