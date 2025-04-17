@@ -17,40 +17,6 @@ let answers = {
   noMilk: false,
 };
 
-const foodImage = document.getElementById("foodImage");
-const drinkImage = document.getElementById("drinkImage");
-
-if (foodImage && drinkImage){
-  const foodMap = {
-    "beef cart noodles": "foodQuizImages/beefCart.png",
-    "plain congee with you tiao": "foodQuizImages/congeeYouTiao.png",
-    "hong kong-styled french toast": "foodQuizImages/frenchToast.png",
-    //"pork congee with century egg": "foodQuizImages/"
-    "mango pomelo sago": "foodQuizImages/mangoPomelo.png",
-    "cha siu fan": "foodQuizImages/chaSiuBao.png",
-    "cheung fun with fishballs and siu mai": "foodQuizImages/curryFishball",
-    "cheung fun": "foodQuizImages/cheungFun.png",
-    "mango pancake": "foodQuizImages/mangoPancake.png",
-    "dan tat": "foodQuizImages/danTat.png",
-    "cha siu bao": "foodQuizImages/chaSiuBao.png",
-    "cheung zai bao": "foodQuizImages/cheungZai.png",
-    //"macaroni soup with spam": "foodQuizImages/"
-    "bo lo yau": "foodQuizImages/pineappleBun.png"
-    //"dim sum": foodQuizImages
-  };
-
-  const drinkMap = {
-    "red bean ice": "foodQuizImages/redBeanIce",
-    //"hot lemon tea": foodQuizImages
-    "ice lemon tea": "foodQuizImages/honeyLemon"
-    //"hot lemon tea": "foodQuizImages/",
-    //"ovaltine": "foodQuizImages"
-  }
-
-  foodImage.src = foodMap[foodRec] || foodMap["dim sum"];
-  drinkImage.src = drinkMap[drinkRec] || drinkMap["ovaltine"];
-}
-
 function toggleButtonStyles(selectedId, otherId) {
   const selected = document.getElementById(selectedId);
   const other = document.getElementById(otherId);
@@ -250,6 +216,41 @@ document.addEventListener("DOMContentLoaded", function () {
         resultText.textContent = `hi ${name}, based on your answers, the food and drink I'd recommend to you are ${foodRec} and ${drinkRec}.`;
       }
     }
+
+    const foodImage = document.getElementById("foodImage");
+    const drinkImage = document.getElementById("drinkImage");
+    
+    if (foodImage && drinkImage){
+      const foodMap = {
+        "beef cart noodles": "foodQuizImages/beefCart.png",
+        "plain congee with you tiao": "foodQuizImages/congeeYouTiao.png",
+        "hong kong-styled french toast": "foodQuizImages/frenchToast.png",
+        //"pork congee with century egg": "foodQuizImages/"
+        "mango pomelo sago": "foodQuizImages/mangoPomelo.png",
+        "cha siu fan": "foodQuizImages/chaSiuBao.png",
+        "cheung fun with fishballs and siu mai": "foodQuizImages/curryFishball.png",
+        "cheung fun": "foodQuizImages/cheungFun.png",
+        "mango pancake": "foodQuizImages/mangoPancake.png",
+        "dan tat": "foodQuizImages/danTat.png",
+        "cha siu bao": "foodQuizImages/chaSiuBao.png",
+        "cheung zai bao": "foodQuizImages/cheungZai.png",
+        //"macaroni soup with spam": "foodQuizImages/"
+        "bo lo yau": "foodQuizImages/pineappleBun.png"
+        //"dim sum": foodQuizImages
+      };
+    
+      const drinkMap = {
+        "red bean ice": "foodQuizImages/redBeanIce.png",
+        //"hot lemon tea": foodQuizImages
+        "ice lemon tea": "foodQuizImages/honeyLemon.png"
+        //"hot lemon tea": "foodQuizImages/",
+        //"ovaltine": "foodQuizImages"
+      }
+    
+      foodImage.src = foodMap[foodRec] || foodMap["dim sum"];
+      drinkImage.src = drinkMap[drinkRec] || drinkMap["ovaltine"];
+    }
+
   }
 });
 
