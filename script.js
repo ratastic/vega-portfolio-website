@@ -17,6 +17,40 @@ let answers = {
   noMilk: false,
 };
 
+const foodImage = document.getElementById("foodImage");
+const drinkImage = document.getElementById("drinkImage");
+
+if (foodImage && drinkImage){
+  const foodMap = {
+    "beef cart noodles": "foodQuizImages/beefCart.png",
+    "plain congee with you tiao": "foodQuizImages/congeeYouTiao.png",
+    "hong kong-styled french toast": "foodQuizImages/frenchToast.png",
+    //"pork congee with century egg": "foodQuizImages/"
+    "mango pomelo sago": "foodQuizImages/mangoPomelo.png",
+    "cha siu fan": "foodQuizImages/chaSiuBao.png",
+    "cheung fun with fishballs and siu mai": "foodQuizImages/curryFishball",
+    "cheung fun": "foodQuizImages/cheungFun.png",
+    "mango pancake": "foodQuizImages/mangoPancake.png",
+    "dan tat": "foodQuizImages/danTat.png",
+    "cha siu bao": "foodQuizImages/chaSiuBao.png",
+    "cheung zai bao": "foodQuizImages/cheungZai.png",
+    //"macaroni soup with spam": "foodQuizImages/"
+    "bo lo yau": "foodQuizImages/pineappleBun.png"
+    //"dim sum": foodQuizImages
+  };
+
+  const drinkMap = {
+    "red bean ice": "foodQuizImages/redBeanIce",
+    //"hot lemon tea": foodQuizImages
+    "ice lemon tea": "foodQuizImages/honeyLemon"
+    //"hot lemon tea": "foodQuizImages/",
+    //"ovaltine": "foodQuizImages"
+  }
+
+  foodImage.src = foodMap[foodRec] || foodMap["dim sum"];
+  drinkImage.src = drinkMap[drinkRec] || drinkMap["ovaltine"];
+}
+
 function toggleButtonStyles(selectedId, otherId) {
   const selected = document.getElementById(selectedId);
   const other = document.getElementById(otherId);
@@ -190,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
       !answers.meat &&
       answers.snack
     ) {
-      foodRec = "pineapple bun with a slice of butter"; // works
+      foodRec = "bo lo yau"; // works
     } else {
       foodRec = "dim sum";
     }
@@ -205,15 +239,15 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (answers?.hot && answers.milk) {
       drinkRec = "hong kong milk tea";
     } else {
-      drinkRec = "something refreshing";
+      drinkRec = "ovaltine";
     }
 
     const resultText = document.getElementById("resultText");
     if (resultText) {
       if (foodRec === "dim sum") {
-        resultText.textContent = `hi ${name}, you should try dim sum and ${drinkRec}.`;
+        resultText.textContent = `hi ${name}, you provided an interesting answer combination; you should try dim sum and ${drinkRec}.`;
       } else {
-        resultText.textContent = `hi ${name}, the food and drink I'd recommend to you are ${foodRec} and ${drinkRec}.`;
+        resultText.textContent = `hi ${name}, based on your answers, the food and drink I'd recommend to you are ${foodRec} and ${drinkRec}.`;
       }
     }
   }
