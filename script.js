@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       foodRec = "dim sum";
     }
-
+ 
     let drinkRec = "";
     if (answers?.iced && answers.milk) {
       drinkRec = "red bean ice";
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "beef cart noodles": "foodQuizImages/beefCart.png",
         "plain congee with you tiao": "foodQuizImages/congeeYouTiao.png",
         "hong kong-styled french toast": "foodQuizImages/frenchToast.png",
-        //"pork congee with century egg": "foodQuizImages/"
+        "pork congee with century egg": "foodQuizImages/centuryEgg.png",
         "mango pomelo sago": "foodQuizImages/mangoPomelo.png",
         "cha siu fan": "foodQuizImages/chaSiuBao.png",
         "cheung fun with fishballs and siu mai": "foodQuizImages/curryFishball.png",
@@ -234,17 +234,17 @@ document.addEventListener("DOMContentLoaded", function () {
         "dan tat": "foodQuizImages/danTat.png",
         "cha siu bao": "foodQuizImages/chaSiuBao.png",
         "cheung zai bao": "foodQuizImages/cheungZai.png",
-        //"macaroni soup with spam": "foodQuizImages/"
-        "bo lo yau": "foodQuizImages/pineappleBun.png"
-        //"dim sum": foodQuizImages
+        "macaroni soup with spam": "foodQuizImages/macaroniSoup.png",
+        "bo lo yau": "foodQuizImages/pineappleBun.png",
+        "dim sum": "foodQuizImages/dimSum.png"
       };
     
       const drinkMap = {
         "red bean ice": "foodQuizImages/redBeanIce.png",
         //"hot lemon tea": foodQuizImages
-        "ice lemon tea": "foodQuizImages/honeyLemon.png"
-        //"hong kong milk tea": "foodQuizImages/",
-        //"ovaltine": "foodQuizImages"
+        "ice lemon tea": "foodQuizImages/honeyLemon.png",
+        "hong kong milk tea": "foodQuizImages/milkTea.png",
+        "ovaltine": "foodQuizImages/ovaltine.png"
       }
     
       foodImage.src = foodMap[foodRec] || foodMap["dim sum"];
