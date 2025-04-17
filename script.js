@@ -241,8 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
       const drinkMap = {
         "red bean ice": "foodQuizImages/redBeanIce.png",
-        //"hot lemon tea": foodQuizImages
-        "ice lemon tea": "foodQuizImages/honeyLemon.png",
+        "hot lemon tea": "foodQuizImages/hotLemon.png",
+        "iced lemon tea": "foodQuizImages/honeyLemon.png",
         "hong kong milk tea": "foodQuizImages/milkTea.png",
         "ovaltine": "foodQuizImages/ovaltine.png"
       }
