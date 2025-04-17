@@ -198,6 +198,14 @@ h4 {
   background: #9bdd4a;
 }
 
+.result-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
 hr {
   border: none;
   border-top: 2px dotted #ff007f;
