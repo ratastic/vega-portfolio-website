@@ -93,14 +93,14 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
     ) {
       foodRec = "hong kong-styled french toast"; // works
     } else if (
-      answers?.light &&
+      answers?.filling &&
       answers.soup &&
-      !answers.bread &&
+      answers.bread &&
       !answers.sweet &&
       answers.meat &&
       answers.meal
     ) {
-      foodRec = "pork congee with century egg"; // works
+      foodRec = "pork congee with century egg"; //works
     } else if (
       answers?.light &&
       answers.soup &&
@@ -114,11 +114,11 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
       answers?.filling &&
       !answers.soup &&
       answers.noodles &&
-      answers.savory &&
+      !answers.savory &&
       answers.meat &&
       answers.meal
     ) {
-      foodRec = "cha siu fan"; // works
+      foodRec = "cha siu fan"; //???
     } else if (
       answers?.filling &&
       !answers.soup &&
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
         "hong kong-styled french toast": "foodQuizImages/frenchToast.png",
         "pork congee with century egg": "foodQuizImages/centuryEgg.png",
         "mango pomelo sago": "foodQuizImages/mangoPomelo.png",
-        "cha siu fan": "foodQuizImages/chaSiuBao.png",
+        "cha siu fan": "foodQuizImages/chaSiuFan.png",
         "cheung fun with fishballs and siu mai": "foodQuizImages/curryFishball.png",
         "cheung fun": "foodQuizImages/cheungFun.png",
         "mango pancake": "foodQuizImages/mangoPancake.png",
