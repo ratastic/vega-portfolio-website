@@ -212,8 +212,67 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
     if (resultText) {
       if (foodRec === "dim sum") {
         resultText.textContent = `hi ${name}, you provided an interesting answer combination; you should try dim sum and ${drinkRec}.`;
+        descText.textContent = `dim sum is a meal composed of an assortment of small dishes— usually steamed in bamboo baskets— and is best eaten with a group. dim sum menus offer a wide variety of ingredient and flavor options such as steamed buns, braised chicken feet, various dumplings, etc.`;
       } else {
         resultText.textContent = `hi ${name}, based on your answers, the food and drink I'd recommend to you are ${foodRec} and ${drinkRec}.`;
+      }
+      if (foodRec === "beef cart noodles"){
+        descText.textContent = `beef cart noodles are sold by street vendors and small restaurants in hong kong. though this recommendation suggests beef, these bowls are customizable and offer a variety of meat options, toppings such as radish and tripe, and noodle types.`;
+      }
+      if (foodRec === "plain congee with you tiao"){
+        descText.textContent = `plain congee with you tiao is a popular chinese breakfast consisting of a rice porridge and fried dough.`;
+      }
+      if (foodRec === "hong kong-styled french toast"){
+        descText.textContent = `hong kong-styled french toast is a unique take on the typical french toast— it has a layer of peanut butter between the bread and is topped with condensed milk or syrup and a slice butter.`;
+      }
+      if (foodRec === "pork congee with century egg"){
+        descText.textContent = `pork congee is a rice porridge with shredded pork; century egg is a preserved egg. don't be alarmed by the color!`;
+      }
+      if (foodRec === "mango pomelo sago"){
+        descText.textContent = `mango pomelo sago is a sweet and refreshing hong kong dessert consisting of a pureed mango base, diced mango, coconut milk, tapioca pearls, and pomelo.`;
+      }
+      if (foodRec === "cha siu fan"){
+        descText.textContent = `cha siu fan is a rice-based dish topped with a cantonese barbeque pork and vegetables.`;
+      }
+      if (foodRec === "cheung fun with fishballs and siu mai"){
+        descText.textContent = `cheung fun with fishballs and siu mai is a popular hong kong street food often topped with a peanut sauce and hoisin sauce or a sweet soy sauce and garnished with sesame seeds. cheung fun are steamed rice rolls; siu mai is a dumpling served plain or filled with pork or shrimp.`;
+      }
+      if (foodRec === "cheung fun"){
+        descText.textContent = `cheung fun are steamed rice rolls often served with a peanut sauce and hoison sauce or sweet soy sauce and garnished with sesame seeds.`;
+      }
+      if (foodRec === "mango pancake"){
+        descText.textContent = `mango pancake is a hong kong dessert made of a thin yellow crepe filled with whipped cream and sweet mango chunks.`; 
+      }
+      if (foodRec === "dan tat"){
+        descText.textContent = `dan tat is a shortcrust pastry with an egg custard filling. it is similar to portugese egg tarts but is less sweet.`;
+      }
+      if (foodRec === "cha siu bao"){
+        descText.textContent = `cha siu bao is a cantonese dim sum staple. it is a steamed bun with a sweet barbeque pork filling.`;
+      }
+      if (foodRec === "cheung zai bao"){
+        descText.textContent = `cheung zai bao is a breakfast bun with a pork sausage in the center.`;
+      }
+      if (foodRec === "macaroni soup with spam"){
+        descText.textContent = `macaroni soup with spam is a breakfast dish commonly served at cha chaan tengs— hong kong diners. it is a salty macaroni noodle soup dish paired with luncheon meat, fried egg, and vegetables`;
+      }
+      if (foodRec === "bo lo yau"){
+        descText.textContent = `bo lo yau is an elevated version of bo lo bao— "pineapple bun" in english. it is a bun with a cracked, cookie-like coating that resembles the texture of a pineapple. bo lo yau— yau meaning "oil" in english— is a pineapple bun served with a slice of butter stuffed in the center.`;
+      }
+
+      if (drinkRec === "red bean ice"){
+        drinkDesc.textContent = `red bean ice is a shaved ice drink with sweet adzuki beans and evaporated milk. it is popular in cha chaan tengs— hong kong diners.`;
+      }
+      if (drinkRec === "hot lemon tea"){
+        drinkDesc.textContent = `hot lemon tea is pretty self-explanatory; however, it is crucial that you crush your lemon to release the flavor.`;
+      }
+      if (drinkRec === "iced lemon tea"){
+        drinkDesc.textContent = `iced lemon tea is pretty self-explanatory; however, it is crucial that you crush your lemon to release the flavor.`;
+      }
+      if (drinkRec === "hong kong milk tea"){
+        drinkDesc.textContent = `hong kong milk tea— inspired by british milk tea— is made with ceylon black tea and evaporated milk instead.`;
+      }
+      if (drinkRec === "ovaltine"){
+        drinkDesc.textContent = `ovaltine is a chocolate-malt flavored powder mixed with milk either served hot or iced.`;
       }
     }
 
