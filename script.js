@@ -1,4 +1,4 @@
-let answers = {
+let answers = { // set the answers to unclicked/false initially 
   sweet: false,
   savory: false,
   bread: false,
@@ -17,7 +17,7 @@ let answers = {
   noMilk: false,
 };
 
-function toggleButtonStyles(selectedId, otherId) {
+function toggleButtonStyles(selectedId, otherId) { // only one button can be lime green at a time
   const selected = document.getElementById(selectedId);
   const other = document.getElementById(otherId);
 
@@ -25,7 +25,7 @@ function toggleButtonStyles(selectedId, otherId) {
   if (other) other.style.backgroundColor = "#ff007f"; 
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { // page switches; input from each page is stored
   const button = document.getElementById("takeQuizButton");
   const button1 = document.getElementById("continueToQuiz");
   const button2 = document.getElementById("retakeQuiz");
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const answers = JSON.parse(localStorage.getItem("foodDrinkAnswers"));
     const name = localStorage.getItem("userName");
 
-    let foodRec = "";
+    let foodRec = ""; // defines the answer combinations for each food and drink
 
     if (
       answers?.filling &&
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       drinkRec = "ovaltine";
     }
 
-    const resultText = document.getElementById("resultText");
+    const resultText = document.getElementById("resultText"); // inserts food and drink specific text 
     if (resultText) {
       if (foodRec === "dim sum") {
         resultText.textContent = `hi ${name}, you provided an interesting answer combination; you should try dim sum and ${drinkRec}.`;
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const foodImage = document.getElementById("foodImage");
     const drinkImage = document.getElementById("drinkImage");
     
-    if (foodImage && drinkImage){
+    if (foodImage && drinkImage){ // display specific food and drink 
       const foodMap = {
         "beef cart noodles": "foodQuizImages/beefCart.png",
         "plain congee with you tiao": "foodQuizImages/congeeYouTiao.png",
@@ -247,13 +247,15 @@ document.addEventListener("DOMContentLoaded", function () {
         "ovaltine": "foodQuizImages/ovaltine.png"
       }
     
-      foodImage.src = foodMap[foodRec] || foodMap["dim sum"];
+      // inserts the necessary food and drink image 
+      foodImage.src = foodMap[foodRec] || foodMap["dim sum"]; 
       drinkImage.src = drinkMap[drinkRec] || drinkMap["ovaltine"];
     }
 
   }
 });
 
+// functions tied to buttons defined in html page
 function sweetAnswer() {
   answers.sweet = true;
   answers.savory = false;

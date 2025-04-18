@@ -199,11 +199,23 @@ h4 {
 }
 
 .result-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.result-images img{
+  max-width: 300px;    
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+  margin: 0;          
+  padding-bottom: 30px;
+  display: block;
 }
 
 hr {
