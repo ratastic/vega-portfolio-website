@@ -30,15 +30,7 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   const button1 = document.getElementById("continueToQuiz");
   const button2 = document.getElementById("retakeQuiz");
   const button3 = document.getElementById("outcomeButton");
-
   const button4 = document.getElementById("divinationButton"); // button leading to divination experience
-
-  
-  if (button4) {
-    button.addEventListener("click", function () {
-      window.location.href = "divinationPage01.html";
-    });
-  }
 
   if (button) {
     button.addEventListener("click", function () {
@@ -65,6 +57,12 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
     button3.addEventListener("click", function () {
       localStorage.setItem("foodDrinkAnswers", JSON.stringify(answers));
       window.location.href = "quizResultPage.html";
+    });
+  }
+
+  if (button4) {
+    button4.addEventListener("click", function () {
+      window.location.href = "divinationPage01.html";
     });
   }
 

@@ -167,7 +167,7 @@ h4 {
   margin-bottom: 30px;
 }
 
-#takeQuizButton, #continueToQuiz {
+#takeQuizButton, #continueToQuiz, #divinationButton{
   display: block;
   margin: auto;
   padding: 10px 20px;
@@ -179,12 +179,12 @@ h4 {
   font-size: 16px;
 }
 
-#takeQuizButton:hover, #continueToQuiz:hover {
+#takeQuizButton:hover, #continueToQuiz:hover, #divinationButton:hover {
   background: #9bdd4a;
 }
 
 
-#sweetButton, #savoryButton, #breadButton, #riceButton, #mealButton, #snackButton, #lightButton, #fillingButton, #icedButton, #hotButton, #milkButton, #noMilkButton, #submitButton, #styleButton, #submitStyleButton, #outcomeButton, #meatButton, #noMeatButton, #soupButton, #noSoupButton, #retakeQuiz, #divinationButton {
+#sweetButton, #savoryButton, #breadButton, #riceButton, #mealButton, #snackButton, #lightButton, #fillingButton, #icedButton, #hotButton, #milkButton, #noMilkButton, #submitButton, #styleButton, #submitStyleButton, #outcomeButton, #meatButton, #noMeatButton, #soupButton, #noSoupButton, #retakeQuiz {
   padding: 10px 20px;
   width: fit-content;
   border: none;
@@ -194,7 +194,7 @@ h4 {
   font-size: 16px;
 }
 
-#sweetButton:hover, #savoryButton:hover, #breadButton:hover, #riceButton:hover, #mealButton:hover, #snackButton:hover, #lightButton:hover, #fillingButton:hover, #icedButton:hover, #hotButton:hover, #milkButton:hover, #noMilkButton:hover, #submitButton:hover, #styleButton:hover, #submitStyleButton:hover, #outcomeButton:hover, #meatButton:hover, #noMeatButton:hover, #soupButton:hover, #noSoupButton:hover, #retakeQuiz:hover, #divinationButton:hover{
+#sweetButton:hover, #savoryButton:hover, #breadButton:hover, #riceButton:hover, #mealButton:hover, #snackButton:hover, #lightButton:hover, #fillingButton:hover, #icedButton:hover, #hotButton:hover, #milkButton:hover, #noMilkButton:hover, #submitButton:hover, #styleButton:hover, #submitStyleButton:hover, #outcomeButton:hover, #meatButton:hover, #noMeatButton:hover, #soupButton:hover, #noSoupButton:hover, #retakeQuiz:hover {
   background: #9bdd4a;
 }
 
