@@ -31,6 +31,15 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   const button2 = document.getElementById("retakeQuiz");
   const button3 = document.getElementById("outcomeButton");
 
+  const button4 = document.getElementById("divinationButton"); // button leading to divination experience
+
+  
+  if (button4) {
+    button.addEventListener("click", function () {
+      window.location.href = "divinationPage01.html";
+    });
+  }
+
   if (button) {
     button.addEventListener("click", function () {
       window.location.href = "quizStartPage.html";
