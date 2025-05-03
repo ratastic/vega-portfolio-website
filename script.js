@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   const button1 = document.getElementById("continueToQuiz");
   const button2 = document.getElementById("retakeQuiz");
   const button3 = document.getElementById("outcomeButton");
+
   const button4 = document.getElementById("divinationButton"); // button leading to divination experience
+  const button5 = document.getElementById("firstPartButton");
 
   if (button) {
     button.addEventListener("click", function () {
@@ -63,6 +65,12 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   if (button4) {
     button4.addEventListener("click", function () {
       window.location.href = "divinationPage01.html";
+    });
+  }
+
+  if (button5){
+    button5.addEventListener("click", function () {
+      window.location.href = "divinationPage02.html";
     });
   }
 
