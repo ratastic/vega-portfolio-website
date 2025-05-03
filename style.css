@@ -183,10 +183,21 @@ h4 {
   justify-content: center;
   color: white;
   font-size: 16px;
-  font-weight: bold;
 }
 
-#takeQuizButton, #continueToQuiz, #divinationButton, #firstPartButton{
+.tarot-card:hover{
+  background-color: #9bdd4a;
+}
+
+.tarot-text{
+  transition: opacity 1s ease-in;
+}
+
+.tarot-text.show{
+  opacity: 1;
+}
+
+#takeQuizButton, #continueToQuiz, #divinationButton, #firstPartButton, #secondPartButton, #finalPartButton{
   display: block;
   margin: auto;
   padding: 10px 20px;
@@ -198,7 +209,7 @@ h4 {
   font-size: 16px;
 }
 
-#takeQuizButton:hover, #continueToQuiz:hover, #divinationButton:hover, #firstPartButton:hover {
+#takeQuizButton:hover, #continueToQuiz:hover, #divinationButton:hover, #firstPartButton:hover, #secondPartButton:hover, #finalPartButton:hover {
   background: #9bdd4a;
 }
 

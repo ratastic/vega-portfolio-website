@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
 
   const button4 = document.getElementById("divinationButton"); // button leading to divination experience
   const button5 = document.getElementById("firstPartButton");
+  const button6 = document.getElementById("secondPartButton");
+  const button7 = document.getElementById("finalPartButton");
 
   if (button) {
     button.addEventListener("click", function () {
@@ -71,6 +73,18 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   if (button5){
     button5.addEventListener("click", function () {
       window.location.href = "divinationPage02.html";
+    });
+  }
+
+  if (button6){
+    button6.addEventListener("click", function () {
+      window.location.href = "divinationPage03.html";
+    });
+  }
+
+  if (button7){
+    button7.addEventListener("click", function () {
+      window.location.href = "divinationPage04.html";
     });
   }
 
@@ -325,7 +339,6 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
       foodImage.src = foodMap[foodRec] || foodMap["dim sum"]; 
       drinkImage.src = drinkMap[drinkRec] || drinkMap["ovaltine"];
     }
-
   }
 });
 
