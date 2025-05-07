@@ -1,3 +1,5 @@
+const bugInfo = `https://api.inaturalist.org/v1/taxa?taxon_id=47158&rank=species&per_page=500&page=1`;
+
 let answers = { // set the answers to unclicked/false initially 
   sweet: false,
   savory: false,
@@ -35,6 +37,73 @@ document.addEventListener("DOMContentLoaded", function () { // page switches; in
   const button5 = document.getElementById("firstPartButton");
   const button6 = document.getElementById("secondPartButton");
   const button7 = document.getElementById("finalPartButton");
+
+  const currentPage = window.location.href;
+
+  if (currentPage.includes("divinationPage02.html") || currentPage.includes("divinationPage03.html")) {
+    fetch(bugInfo)
+      .then(response => response.json())
+      .then(data => {
+        const bugs = data.results;
+        const randomBug = bugs[Math.floor(Math.random() * bugs.length)];
+
+        const bugName = randomBug.preferred_common_name;
+        const imageUrl = randomBug.default_photo.medium_url;
+
+        const cards = document.querySelectorAll(".tarot-card");
+
+        cards.forEach((card, index) => {
+          card.addEventListener("click", function () {
+            if (currentPage.includes("divinationPage02.html")) {
+              localStorage.setItem("pastBug", bugName);
+              localStorage.setItem("pastBugImage", imageUrl);
+            } else if (currentPage.includes("divinationPage03.html")) {
+              localStorage.setItem("nextBug", bugName);
+              localStorage.setItem("nextBugImage", imageUrl);
+            }
+
+            card.textContent = bugName;
+
+            cards.forEach((otherCard, otherIndex) => {
+              if (otherIndex !== index) {
+                otherCard.removeEventListener("click", arguments.callee);
+                otherCard.style.pointerEvents = "none";
+              }
+            });
+          });
+        });
+      })
+      .catch(error => {
+        console.error("Error fetching bug data:", error);
+      });
+  }
+
+  if (currentPage.includes("divinationPage04.html")) {
+    const pastBugName = localStorage.getItem("pastBug");
+    const nextBugName = localStorage.getItem("nextBug");
+    const pastBugImage = localStorage.getItem("pastBugImage");
+    const nextBugImage = localStorage.getItem("nextBugImage");
+
+    const pastBugElement = document.getElementById("pastBugName");
+    const nextBugElement = document.getElementById("nextBugName");
+    const firstInsect = document.getElementById("firstInsect");
+    const secondInsect = document.getElementById("secondInsect");
+
+    if (pastBugElement && pastBugName) {
+      pastBugElement.textContent = `In your past life, you were a ${pastBugName}.`;
+    }
+    if (nextBugElement && nextBugName) {
+      nextBugElement.textContent = `In your next life, you will be a ${nextBugName}.`;
+    }
+    if (firstInsect && pastBugImage) {
+      firstInsect.src = pastBugImage;
+      firstInsect.alt = pastBugName;
+    }
+    if (secondInsect && nextBugImage) {
+      secondInsect.src = nextBugImage;
+      secondInsect.alt = nextBugName;
+    }
+  }
 
   if (button) {
     button.addEventListener("click", function () {
