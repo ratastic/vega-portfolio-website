@@ -228,7 +228,7 @@ h4 {
   background: #9bdd4a;
 }
 
-.result-images {
+.result-images, .firstInsect, .secondInsect {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ h4 {
   margin: 0 auto;
 }
 
-.result-images img{
+.result-images img, .firstInsect img, .secondInsect img{
   max-width: 300px;    
   max-height: 200px;
   width: auto;
