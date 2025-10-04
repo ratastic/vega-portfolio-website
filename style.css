@@ -123,7 +123,7 @@ h4 {
 .analog-container img:hover {
   transform: scale(1.05);
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .column-image {
