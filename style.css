@@ -126,6 +126,55 @@ h4 {
   /* mix-blend-mode: difference; */
 }
 
+.analog-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.analog-container2 img {
+  object-fit: cover;
+  object-position: center;
+  padding-bottom: 10px;
+}
+
+.analog-container2 img:hover {
+  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+}
+
+.imgContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.textOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background-color: #ff0080;
+}
+
+.textOverlay .text{
+  color: white;
+}
+
+.imgContainer:hover .textOverlay {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 20px;
+}
+
 .column-image {
   display: flex;
   flex-direction: column; 
