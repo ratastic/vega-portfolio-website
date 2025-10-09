@@ -153,12 +153,11 @@ h4 {
   gap: 20px;
   justify-items: center;
   padding: 20px;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 400px;
 }
 
 .sketch-container a {
   display: block; 
-  
 }
 
 .sketch-container img {
