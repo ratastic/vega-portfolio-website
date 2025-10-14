@@ -240,7 +240,7 @@ h4 {
 }
 
 /* mobile compatibility */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hamburger {
     display: block;
   }
