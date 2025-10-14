@@ -1,0 +1,153 @@
+.p5-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.tarot-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarot-card {
+  width: 200px;
+  height: 300px;
+  background-color: #ff007f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.tarot-card:hover{
+  background-color: #9bdd4a;
+}
+
+.tarot-text{
+  transition: opacity 1s ease-in;
+}
+
+.tarot-text.show{
+  opacity: 1;
+}
+
+#takeQuizButton, #continueToQuiz, #divinationButton, #firstPartButton, #secondPartButton, #finalPartButton{
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  background: #ff007f;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+#takeQuizButton:hover, #continueToQuiz:hover, #divinationButton:hover, #firstPartButton:hover, #secondPartButton:hover, #finalPartButton:hover {
+  background: #9bdd4a;
+}
+
+
+#sweetButton, #savoryButton, #breadButton, #riceButton, #mealButton, #snackButton, #lightButton, #fillingButton, #icedButton, #hotButton, #milkButton, #noMilkButton, #submitButton, #styleButton, #submitStyleButton, #outcomeButton, #meatButton, #noMeatButton, #soupButton, #noSoupButton, #retakeQuiz {
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  background: #ff007f;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+#sweetButton:hover, #savoryButton:hover, #breadButton:hover, #riceButton:hover, #mealButton:hover, #snackButton:hover, #lightButton:hover, #fillingButton:hover, #icedButton:hover, #hotButton:hover, #milkButton:hover, #noMilkButton:hover, #submitButton:hover, #styleButton:hover, #submitStyleButton:hover, #outcomeButton:hover, #meatButton:hover, #noMeatButton:hover, #soupButton:hover, #noSoupButton:hover, #retakeQuiz:hover {
+  background: #9bdd4a;
+}
+
+.result-images, .firstInsect, .secondInsect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.result-images img, .firstInsect img, .secondInsect img{
+  max-width: 300px;    
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+  margin: 0;          
+  padding-bottom: 30px;
+  display: block;
+}
+
+hr {
+  border: none;
+  border-top: 2px dotted #ff007f;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.solid-line {
+  border: none;
+  height: 2px;
+  background-color: #ff007f;
+  width: 60%;
+  margin: 20px auto;
+}
+
+input[type="text"],
+select {
+  font-family: Helvetica;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  color: white;
+  background-color: #ff007f;
+  border: 2px solid  #9bdd4a;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="text"]:hover,
+select:hover,
+input[type="text"]:focus,
+select:focus {
+  background-color: #9bdd4a;
+  outline: none;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.button-row button {
+  margin: 0;
+}
+
+h6 {
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 10px;
+}
+
+h7 {
+  font-size: 16px;
+  text-align: left;
+}
