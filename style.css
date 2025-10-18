@@ -253,9 +253,9 @@ h4 {
   }
 
   .header-image {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .left {
@@ -270,6 +270,8 @@ h4 {
     z-index: 1000;
     padding: 20px;
     flex: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .left.open {
