@@ -252,6 +252,12 @@ h4 {
     display: block;
   }
 
+  .header-image {
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
+  }
+
   .left {
     position: fixed;
     top: 0;
