@@ -229,26 +229,26 @@ h4 {
 }
 
 .hamburger {
-  display: none; /* hidden on desktop */
+  display: none; /* hide on desktop */
   font-size: 2rem;
   padding: 10px;
   cursor: pointer;
   position: fixed;
   top: 10px;
   left: 10px;
-  z-index: 1001;
+  z-index: 1100; 
 }
 
-/* mobile compatibility */
+/* mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
 
-  .column.left {
+  .left {
     position: fixed;
     top: 0;
-    left: -100%; 
+    left: -100%;
     width: 250px;
     height: 100%;
     background-color: white;
@@ -256,13 +256,28 @@ h4 {
     transition: left 0.3s ease;
     z-index: 1000;
     padding: 20px;
+    flex: none; 
   }
 
-  .column.left.open {
-    left: 0; 
+  .left.open {
+    left: 0;
   }
 
-  .column.right {
-    margin-left: 0; 
+  .right {
+    flex: 1;
+    margin-left: 0;
+    overflow-y: auto;
+  }
+
+  body {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  h2, h4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
   }
 }

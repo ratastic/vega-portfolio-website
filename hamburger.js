@@ -1,4 +1,7 @@
 function toggleMenu() {
     const menu = document.getElementById('sidebarMenu');
-    menu.classList.toggle('open');
+    console.log("Hamburger clicked"); // test
+    if (menu) {
+      menu.classList.toggle('open');
+    }
   }
