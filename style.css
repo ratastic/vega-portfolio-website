@@ -256,7 +256,7 @@ h4 {
     transition: left 0.3s ease;
     z-index: 1000;
     padding: 20px;
-    flex: none; 
+    flex: none;
   }
 
   .left.open {
@@ -264,12 +264,15 @@ h4 {
   }
 
   .right {
-    flex: 1;
-    margin-left: 0;
-    overflow-y: auto;
+    flex: none;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    padding: 20px;
   }
 
   body {
+    display: block;
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
@@ -279,6 +282,20 @@ h4 {
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
-    font-size: 14px;
+  }
+
+  .single-image img,
+  .column-image img {
+    padding-left: 0;
+  }
+
+  .analog-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .sketch-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
   }
 }
