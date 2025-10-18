@@ -328,7 +328,7 @@ h4 {
 
   .youtube-container{
     aspect-ratio: 16 / 9; 
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: auto;
   }
 }
