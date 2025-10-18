@@ -140,6 +140,12 @@ h4 {
   width: 100%;
 }
 
+.youtube-container{
+  aspect-ratio: 16 / 9; 
+  width: 90%;
+  height: 90%;
+}
+
 .analog-container2 img {
   width: 100%;
   height: auto;
@@ -293,7 +299,7 @@ h4 {
     overflow-y: auto;
   }
 
-  h1, h2, h4 {
+  .name, h1, h2, h4 {
     padding-left: 20px;
     padding-right: 20px; 
     text-align: center;
@@ -318,5 +324,11 @@ h4 {
   .sketch-container {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+  }
+
+  .youtube-container{
+    aspect-ratio: 16 / 9; 
+    width: 10%;
+    height: 10%;
   }
 }
