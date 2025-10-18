@@ -253,7 +253,7 @@ h4 {
   }
 
   .header-image {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin-top: 20px;
   }
@@ -299,8 +299,7 @@ h4 {
     text-align: center;
   }
 
-  .single-image img,
-  .column-image img {
+  .single-image img, .column-image img {
     padding-left: 0;
   }
 
