@@ -130,21 +130,28 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.analog-container2 img {
-  object-fit: cover;
-  object-position: center;
-  padding-bottom: 10px;
-}
-
-.analog-container2 img:hover {
-  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+  gap: 20px;
+  padding: 20px;
 }
 
 .imgContainer {
   position: relative;
-  display: inline-block;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.analog-container2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+
+.analog-container2 img:hover {
+  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
 }
 
 .sketch-container {
