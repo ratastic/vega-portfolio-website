@@ -120,8 +120,8 @@ h4 {
   transition: transform 0.3s ease;
 }
 
-.analog-container img:hover {
-  transform: scale(1.05);
+.analog-container2 img:hover {
+  transform: scale(1.01);
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
   /* mix-blend-mode: difference; */
 }
@@ -161,7 +161,8 @@ h4 {
 }
 
 .sketch-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-items: center;
