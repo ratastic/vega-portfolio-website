@@ -8,6 +8,17 @@
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
 }
 
+.button {
+  border: none;
+  background-color: #ff008000;
+  color:#ff007f;
+}
+
+.button svg:hover {
+  fill: #9bdd4a;
+  cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
+}
+
 * {
   font-family: Helvetica, sans-serif;
   font-weight: 500;
@@ -27,9 +38,10 @@
 body {
   display: flex;
   background-color: white;
-  background-position-x: center;
-  background-position-y: center;
-  background-size: 2000px;
+  /* background-image: url(appleIcons/Wormies_02.png); */
+  /* background-position-x: center;
+  background-position-y: center; */
+  /* background-size: 2000px; */
   cursor: url("appleIcons/oie_1395147ZO8Wi0ln.png"), auto;
   height: 100vh;
   overflow: hidden;
